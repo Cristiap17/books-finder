@@ -44,7 +44,7 @@ input {
 
 button {
   border: 1px solid white;
-  border-radius: 2px;
+  border-radius: 5px;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
@@ -84,13 +84,21 @@ span {
   }
 
   .Search-container button {
-    font-size: 12px;
     right: 61px;
   }
 
-  @media (max-width: 425px) {
-    .Search-container input {
-      font-size: 10px;
+  @media (max-width: 470px) {
+    .Search-container {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      gap: 5px;
+    }
+
+    .Search-container button {
+      width: 100%;
+      right: 0;
+      border-color: transparent;
     }
   }
 }
