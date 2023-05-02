@@ -31,10 +31,11 @@ h1 {
   justify-content: center;
   align-items: center;
   position: relative;
+  width: 100%;
 }
 
 input {
-  width: 500px;
+  width: 100%;
   height: 40px;
   text-align: center;
 }
@@ -48,10 +49,8 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
   width: 70px;
-  height: 42px;
+  height: 46px;
   text-align: center;
-  position: absolute;
-  right: 2px;
 }
 
 button:hover {
@@ -75,40 +74,11 @@ span {
     gap: 10px;
   }
 
-  .HeaderContainer {
-    width: 100%;
-  }
-
   .Search-container {
-    width: 100vh;
+    width: 100%;
   }
 
   .Search-container button {
     right: 92px;
-  }
-
-  @media (max-width: 425px) {
-    .HeaderContainer {
-      width: 100%;
-    }
-
-    .Search-container input {
-      width: 390px;
-    }
-
-    .Search-container button {
-      right: 240px;
-    }
-  }
-
-  @media (max-width: 375px) {
-    .Search-container button {
-      right: 275px;
-    }
-
-    .Search-container input {
-      width: 320px;
-      font-size: 10px;
-    }
   }
 }
