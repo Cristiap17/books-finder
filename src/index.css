@@ -52,7 +52,7 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
   width: 70px;
-  height: 46px;
+  height: 42px;
   text-align: center;
   position: relative;
   right: 66px;
@@ -84,6 +84,13 @@ span {
   }
 
   .Search-container button {
-    right: 65px;
+    font-size: 12px;
+    right: 61px;
+  }
+
+  @media (max-width: 425px) {
+    .Search-container input {
+      font-size: 10px;
+    }
   }
 }
