@@ -67,17 +67,48 @@ span {
   margin-top: 40px;
 }
 
-/* @media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+@media (max-width: 768px) {
+
+  .MainContainer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
   }
 
-  a:hover {
-    color: #747bff;
+  .HeaderContainer {
+    width: 100%;
   }
 
-  button {
-    background-color: #f9f9f9;
+  .Search-container {
+    width: 100vh;
   }
-} */
+
+  .Search-container button {
+    right: 92px;
+  }
+
+  @media (max-width: 425px) {
+    .HeaderContainer {
+      width: 100%;
+    }
+
+    .Search-container input {
+      width: 390px;
+    }
+
+    .Search-container button {
+      right: 240px;
+    }
+  }
+
+  @media (max-width: 375px) {
+    .Search-container button {
+      right: 275px;
+    }
+
+    .Search-container input {
+      width: 320px;
+      font-size: 10px;
+    }
+  }
+}
