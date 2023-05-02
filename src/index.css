@@ -32,7 +32,9 @@ h1 {
   align-items: center;
   position: relative;
   width: 100%;
+  margin-left: 44px;
 }
+
 
 input {
   width: 100%;
@@ -42,6 +44,7 @@ input {
 
 button {
   border: 1px solid white;
+  border-radius: 2px;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
@@ -51,6 +54,8 @@ button {
   width: 70px;
   height: 46px;
   text-align: center;
+  position: relative;
+  right: 66px;
 }
 
 button:hover {
@@ -66,7 +71,7 @@ span {
   margin-top: 40px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 650px) {
 
   .MainContainer {
     display: grid;
@@ -79,6 +84,6 @@ span {
   }
 
   .Search-container button {
-    right: 92px;
+    right: 65px;
   }
 }
